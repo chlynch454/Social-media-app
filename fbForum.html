@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./farcebuck.js"></script>
+    <link rel="stylesheet" type="text/css" href="farcebuck.css" />
+
+    <title>Forum</title>
+</head>
+<body>
+    <header class="main-header">
+		<h1 id="farcebuck">farcebuck</h1>
+        <div>
+        <a href="fbHome.html">Home</a>
+        </div>
+	</header>
+    <form>
+        <div>
+            <label><strong>Enter first name</strong></label>
+        </div>
+        <input type="text" id="f_username" placeholder="Username" required/>
+        <br>
+        <div>
+            <label><strong>Compose a message</strong></label>
+        </div>
+        <input type="text" id="f_message" placeholder="Message" required/>
+        <button id="f_submit" type="button">Post to forum</button>
+    </form>
+    <output id="post_output">
+
+    </output>
+    <template id="post_template_html">
+        <div class="post_div">
+            <p class="post_username_place"></p>
+            <p class="post_message_place"></p>
+            <input class="post_input_place" type="text" placeholder="Comment on post">
+            <button class="post_comment_button">Comment on post</button>
+            <output class="post_output_place"></output>
+        </div>
+    </template>
+    <template id="comment_template_html">
+        <div class="comment_div">
+            <p class="comment_message_place"></p>
+        </div>
+    </template>
+
+</body>
+</html>
